@@ -1,0 +1,43 @@
+<div class="shadow-lg p-3 mb-5 bg-white rounded">
+	<div class="w-100 p-3" style="background-color: #eee;">
+		<table class="table">
+			<caption>Список посетителей</caption>
+		  <thead>
+		    <tr>
+		      <th scope="col">#</th>
+		      <th scope="col">Имя</th>
+		      <th scope="col">Телефон</th>
+		      <th scope="col">Дата и время</th>
+		      <th scope="col">Мастер</th>
+		      <th scope="col">Краска</th>
+		    </tr>
+		  </thead>   
+
+			<% @results.each do |row| %>
+
+		 <tbody>
+		    <tr>
+		      <th scope="row"><%= row['id'] %></th>
+		      <td><%= row['User'] %></td>
+		      <td><%= row['Phone'] %></td>
+		      <td><%= row['Datestamp'] %></td>
+		      <td><%= row['Master'] %></td>
+		      <td style="background-color: <%= row['Color']%>"><%= row['Color'] %></td>
+		    </tr>
+		  
+
+			<% end %>
+		</tbody>	
+		  
+
+
+
+
+
+
+		  
+		  
+		 
+		</table>
+	</div>
+</div>    

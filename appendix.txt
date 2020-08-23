@@ -1,0 +1,49 @@
+f = File.open './public/user.txt', 'a'
+    f.write "Имя: #{@username}, Тел.: #{@phone}, Мастер: #{@master}, Цвет волос: #{@color}, Дата и время: #{@date} #{@time}\n"
+    f.close
+
+if @name == "" or @email == "" or @coment == ""
+		@error = "Вы не заполнили все графы"
+		erb :contacts
+
+
+f = File.open './public/contacts.txt', 'a'
+		f.write "#{@name}, #{@email}, #{@coment}\n"
+		f.close    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Static navbar -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a style="color:#ff0099; font-family:Georgia; font-size:30px" class="navbar-brand" href="/"><em>Гребешок</em></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a style="color:#191970; font-family:Georgia; font-size:20px" class="nav-link" href="/about"><em>О нас</em><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a style="color:#191970; font-family:Georgia; font-size:20px" class="nav-link" href="/visits"><em>Визит к мастеру</em></a>
+      </li>
+      <li class="nav-item">
+        <a style="color:#191970; font-family:Georgia; font-size:20px" class="nav-link" href="/contacts"><em>Контакты</em></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/admins" tabindex="-1" aria-disabled="true">Вход</a>
+      </li>
+    </ul>
+  </div>
+</nav> 

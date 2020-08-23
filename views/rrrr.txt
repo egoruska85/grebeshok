@@ -1,0 +1,75 @@
+<div class="parent">
+  <div class="child">
+    
+      
+        
+          
+            
+            
+              
+            
+          
+            
+        
+          
+            
+            
+
+              
+
+            
+          
+          
+          
+            
+              
+                
+              
+          
+          
+            
+              
+            
+            
+      
+            
+              
+                
+                 
+                    
+                      
+                        
+                        
+                        
+                        
+                      </tr>
+                    </thead>   
+
+                    
+
+                    
+                    <tr>
+                      <th scope="row"><%= row['id'] %></th>
+                        <td><%= row['User'] %></td>
+                        <td><%= row['Datestamp'] %></td>
+                        <td><%= row['Master'] %></td> 
+                    </tr>
+                    <% end %>
+                  </tbody>  
+            
+
+
+
+
+
+
+            
+            
+           
+                  </table>
+                </div>
+              </div>
+            </div>  
+          
+        </div>
+    </div>    
